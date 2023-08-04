@@ -1,4 +1,4 @@
-const Duckdropdown = () => {
+const Navmain = () => {
     return (
         <div className="container-fluid">
             <div className="dropdown">
@@ -14,11 +14,11 @@ const Duckdropdown = () => {
             </div>
             <img src="/Wordle_Hunt.png" alt="" style={{width: '150px'}}/>
             <div className='d-flex justify-content-between' style={{width: '160px'}}>
-                <button type="button" className="btn btn-outline-primary">Log In</button>
-                <button type="button" className="btn btn-primary">Sign Up</button>
+                <button type="button" className="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginmodal">Log In</button>
+                <button type="button" className="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#signupoffcanvas" aria-controls="offcanvasRight">Sign Up</button>
             </div>
         </div>
     );
 }
  
-export default Duckdropdown;
+export default Navmain;
